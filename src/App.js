@@ -1,8 +1,9 @@
+import './app.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>Registration Form</h1>
     </div>
   );
 }
