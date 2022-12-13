@@ -15,3 +15,16 @@ code {
 h1{
   text-align: center;
 }
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.form div {
+  display: flex;
+  width: 16rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
