@@ -28,3 +28,11 @@ h1{
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
+button{
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: darkblue;
+  color: white;
+  border-radius: 0.4rem;
+}

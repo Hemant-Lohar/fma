@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./app.css";
 import axios from "axios";
 
@@ -8,8 +8,8 @@ function App() {
   const [age, setAge] = useState(0)
   const [gender, setGender] = useState("")
 
-  const register = () => {
-    axios.post("http://localhost:3001/api/registration", {
+  const register = async () => {
+    await axios.post("https://economic-dust-tiara.glitch.me/api/registration", {
       name: name,
       gender: gender,
       age: age,
