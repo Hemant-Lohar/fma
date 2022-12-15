@@ -40,12 +40,12 @@ const Details = ({ data, setData }) => {
         />
       </div>
       <div className="input">
-        <label htmlFor="session">Batch</label>
+        <label htmlFor="batch">Batch</label>
         <select
-          name="session"
-          id="session"
+          name="batch"
+          id="batch"
           onChange={(e) => {
-            setData({ ...data, session: e.target.value });
+            setData({ ...data, batch: e.target.value });
           }}
         >
           <option>Select Batch</option>

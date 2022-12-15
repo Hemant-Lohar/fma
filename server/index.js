@@ -16,15 +16,14 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/api/registration", (req, res) => {
-  const userid = req.body.userid;
   const name = req.body.name;
   const gender = req.body.gender;
   const age = req.body.age;
-  const session = req.body.session;
+  const batch = req.body.batch;
 
   const sqlinsert =
-    "INSERT INTO fma (name,gender,age, session) VALUE (?,?,?,?,?);";
-  db.query(sqlinsert, [userid, name, gender, age, session], (err, result) => {
+    "INSERT INTO fma (name,gender,age, batch) VALUE (?,?,?,?);";
+  db.query(sqlinsert, [name, gender, age, batch], (err, result) => {
     res.send();
   });
 });
