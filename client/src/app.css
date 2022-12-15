@@ -1,18 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h1{
+.App {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh; */
+  margin-top: 10rem;
+}
+h1 {
   text-align: center;
 }
 
@@ -21,10 +28,49 @@ h1{
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  margin-top: 2rem;
+  height: 16rem;
 }
 .form div {
   display: flex;
   width: 16rem;
   justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.4rem;
+  background-color: darkblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}
+
+label{
+  font-weight: 600;
+  color: darkblue;
+}
+select {
+  width: 172px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.none{
+  display: none;
+}
+
+h2{
+  text-align: center;
+  width: 100%;
+}
+
+.err{
+  color: red;
+  font-weight: 600;
 }

@@ -16,22 +16,23 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/api/registration", (req, res) => {
+  const userid = req.body.userid;
   const name = req.body.name;
   const gender = req.body.gender;
   const age = req.body.age;
   const session = req.body.session;
 
   const sqlinsert =
-    "INSERT INTO fma (name,gender,age, session) VALUE (?,?,?,?);";
-  db.query(sqlinsert, [name, gender, age, session], (err, result) => {
-    res.send()
+    "INSERT INTO fma (name,gender,age, session) VALUE (?,?,?,?,?);";
+  db.query(sqlinsert, [userid, name, gender, age, session], (err, result) => {
+    res.send();
   });
 });
 
 app.get("/api/get", (req, res) => {
   const sqlselect = "SELECT * FROM fma;";
   db.query(sqlselect, (err, result) => {
-    res.send(result)
+    res.send(result);
   });
 });
 
