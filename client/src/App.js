@@ -29,7 +29,6 @@ function App() {
   useEffect(() => {
     axios.get("https://fmaapi.onrender.com/api/get").then((responce) => {
       setuserdata(responce.data);
-      console.log(responce.data);
     });
   }, []);
 
